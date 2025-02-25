@@ -38,3 +38,78 @@ INSERT INTO cars (brand, model, man_year, color, cc_engine, fuelType, mileage, p
 SELECT * FROM cars;
 
 DELETE FROM cars where id in (3,4,5,6,7);		
+
+
+
+INSERT INTO brands (brand_name) VALUES 
+('Toyota'), 
+('Mitsubishi'), 
+('Honda'), 
+('Hyundai'), 
+('Ford'), 
+('Chevrolet'), 
+('Nissan'), 
+('Volkswagen'), 
+('Mazda'), 
+('Kia'), 
+('BMW'), 
+('Mercedes-Benz'), 
+('Audi'), 
+('Subaru'), 
+('Jeep'), 
+('Dodge'), 
+('Tesla'), 
+('Peugeot'), 
+('Renault'), 
+('Fiat'), 
+('Volvo'), 
+('Lada'), 
+('Suzuki'), 
+('Jaguar'), 
+('Land Rover');
+
+
+
+INSERT INTO models (model_name, brand_id) VALUES
+('Corolla', 1),    -- Toyota
+('Civic', 3),      -- Honda
+('F-150', 5),      -- Ford
+('Silverado', 6),  -- Chevrolet
+('3 Series', 11),  -- BMW
+('A4', 13),        -- Audi
+('C-Class', 12),   -- Mercedes-Benz
+('Altima', 7),     -- Nissan
+('Sonata', 4),     -- Hyundai
+('Sorento', 10),   -- Kia
+('Golf', 8),       -- Volkswagen
+('Model 3', 17),   -- Tesla
+('Grand Cherokee', 14), -- Jeep
+('CX-5', 9),       -- Mazda
+('Outback', 15),   -- Subaru
+('RX 350', 16),    -- Lexus
+('Pacifica', 18),  -- Chrysler
+('Charger', 16),   -- Dodge
+('911', 23),       -- Porsche
+('488', 24);      -- Ferrari
+
+
+
+
+CREATE TABLE fuel_types (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    fuel_type_name VARCHAR(50) NOT NULL
+);
+
+
+INSERT INTO fuel_types (fuel_type_name) VALUES
+('Gasoline'),
+('Diesel'),
+('Electric'),
+('Hybrid'),
+('Natural Gas'),
+('Ethanol'),
+('Propane');
+
+
+
+
